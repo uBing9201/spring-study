@@ -12,16 +12,6 @@ import java.util.Map;
 @RequestMapping("/api")
 public class PostApiController {
 
-//    @PostMapping("/post")
-//    public void post(@RequestBody Map<String, Object> requestData) {
-//
-//        requestData.forEach((key, value) -> {
-//            System.out.println("key : " + key);
-//            System.out.println("value : " + value);
-//        });
-//
-//    }
-
     @PostMapping("/post")
     public void post(@RequestBody PostRequestDto requestDate) {
         System.out.println(requestDate);
